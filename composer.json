@@ -1,0 +1,19 @@
+{
+    "autoload": {
+        "psr-4": {
+            "Source\\": "src"
+        },
+        "files": [
+            "src/Config.php",
+            "src/Helpers.php"
+        ]
+    },
+    "require": {
+        "ext-json": "*",
+        "coffeecode/router": "1.0.8",
+        "coffeecode/datalayer": "1.1.8",
+        "phpmailer/phpmailer": "6.1.4",
+        "league/plates": "V3.4.0",
+        "pagarme/pagarme-php": "v4.0.4"
+    }
+}

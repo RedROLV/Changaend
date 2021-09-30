@@ -1,0 +1,138 @@
+.navbar-container {
+    display: flex;
+    justify-content:  space-between;
+    padding: 20px;
+}
+
+.navbar-container UL {
+   list-style: none; 
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav .logo_container{
+    margin-top: 5px;
+}
+
+.nav_item, .nav_link {
+    color: #000;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 900;
+}
+
+.nav .logo_nav {
+    width: 50px;
+    justify-content: center;
+}
+
+.position {
+    padding-top: 25px;
+}
+.nav li  {
+    margin: 0 10px;
+}
+
+.cad_btn { 
+    background-color: rgba(0, 0, 0, 0.575);
+    padding: 7px;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+
+.login_btn {
+    background-color: #9a1fffbb;
+    padding: 7px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 900;
+}
+
+input {
+    font-size: 16px;
+}
+
+.main_section {
+    height: calc(100vh - 150px);
+    background-color: #d8d8d8e1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5%;
+    flex-wrap: wrap;
+}
+
+.main_section > div h1{
+    color: #fff !important;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+
+.btn {
+    padding: 10px;
+    margin-top: 15px;
+    width: 250px;
+    font-size: 16px;
+}
+
+.ourServices {
+    width: 100%;
+    margin-top: 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about {
+    margin-top: 30px;
+    background-color: #9a1fffbb;
+    display: flex;
+    flex-direction: column;
+}
+
+.about > h1 {
+    text-align: center;
+    padding: 20px;
+}
+
+.containers {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 30%;
+}
+
+p{
+    font-weight: 500;
+}
+
+.aboutLogo {
+    height: 200px !important;
+    padding-bottom: 20px;
+}
+
+.left {
+    padding-left: 150px;
+}
+
+.right {
+    padding-left: 100px;
+}
+
+footer {
+    background-color: rgb(48, 48, 48);
+    color: #fff;
+    text-align: center;
+    padding: 25px;
+}
