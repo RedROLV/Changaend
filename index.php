@@ -31,6 +31,11 @@ $router->post("/login", "Auth:login", "auth.login");
 $router->post("/register", "Auth:register", "auth.register");
 $router->post("/forget", "Auth:forget", "auth.forget");
 $router->post("/reset", "Auth:reset", "auth.reset");
+
+$router->group('user');
+$router->get("/", "Dash:index", "dash.index");
+
+
 /*
  * Adm
  */

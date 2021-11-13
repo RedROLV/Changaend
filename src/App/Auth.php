@@ -19,8 +19,6 @@ class Auth extends Controller {
         $user->senha = md5($data["senha"]);
         $user->telefone = $data['telefone'];
         $user->usuario = $data["usuario"];
-
-
         
         if (!$user->save()) {
             echo $this->ajax("message", [
@@ -32,7 +30,7 @@ class Auth extends Controller {
 
         $_SESSION["user"] = $user->id_user;
       
-        $this->router->redirect('home');
+        echo $this->ajax("redirect", ["url" => $this->router->route("web.login")]);
     }
 
     public function login($data)
@@ -59,10 +57,25 @@ class Auth extends Controller {
         }
 
 
-        $_SESSION["user"] = $user->id_user;
+        $_SESSION["user"] = $user->id_usuario; 
+
+        $url = "";
 
 
-        echo $this->ajax("redirect", ["url" => $this->router->route("admin.index")]);
+        switch ($user->nivel) {
+            case 1:
+                $url = "admin.index";
+                break;
+            case 2:
+                $url = "admin.index";
+                break;
+            case 3:
+                $url = "dash.index";
+                break;                            
+        }
+
+        
+        echo $this->ajax("redirect", ["url" => $this->router->route($url)]);
     }
 
 

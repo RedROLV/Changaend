@@ -15,16 +15,7 @@ class Web extends Controller
 
     public function index()
     {
-        /**echo $this->view->render("themes/web/index", [
-            'title' => site('name'). ' | jeito mais facil de encontrar um serviço!'
-        ]);         */
-
-        // echo "pelo amor de deus";
-
         echo $this->view->render('themes/home');
-        
-
-
     }
 
 
