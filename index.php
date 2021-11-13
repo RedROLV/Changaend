@@ -41,9 +41,7 @@ $router->get("/", "Dash:index", "dash.index");
  */
 
 $router->group('admin');
-$router->get('/', function(){
-    echo '<h1>Nn existe ainda</h1>';
-}, 'admin.index');
+$router->get("/", "Admin:index", "Admin.index");
 
 
 /*
