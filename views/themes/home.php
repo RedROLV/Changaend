@@ -26,9 +26,8 @@
                <center><li class="nav_item" class="logo_container"><a href="./index.html"><img src="<?=asset('img/logo.png')?>" class="logo_nav"></a></li></center>
             </ul>
             <ul class="nav">
-                <li><a class="enter_btn" href="./cadastro.html"> Entrar </a></li>
-                <li><a class="carrinho" href="">MEU CARRINHO </a></li>
-                <li><a class="login_btn" href="./login.html">NOVO PRODUTO </a></li>
+                <li><a class="enter_btn" href="<?=site().'/cadastro'?>"> Cadastrar </a></li>
+                <li><a class="login_btn" href="<?=site().'/login'?>">login </a></li>
             </ul>
         </nav>
 

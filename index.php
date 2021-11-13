@@ -21,7 +21,7 @@ $router->get("/termos", "Web:terms", "web.terms");
 $router->get("/login", "Web:login", "web.login");
 $router->get("/recuperar", "Web:forget", "web.forget");
 $router->get("/senha/{email}/{forget}", "Web:reset", "web.reset");
-$router->get("/ca", "Web:cadastrar", "web.cadastrar");
+$router->get("/cadastro", "Web:cadastrar", "web.cadastrar");
 
 /*
  * WEB POST ROUTES

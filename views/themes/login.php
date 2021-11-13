@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
-    <link rel="stylesheet" href="Css/Style.css">
-    <link rel="stylesheet" href="Css/login.css">
+    <link rel="stylesheet" href="<?=asset("css/style.css")?>">
+    <link rel="stylesheet" href="<?=asset("css/login.css")?>">
 
 </head>
 
@@ -32,7 +32,7 @@
         </Form>
   
         <div class="center">
-          <h6><b>NÃO TEM UMA CONTA?</b><a href="./cadastro.html" class="text"> CADASTRE-SE</a></h6> 
+          <h6><b>NÃO TEM UMA CONTA?</b><a href="<?=site().'/cadastro'?>" class="text"> CADASTRE-SE</a></h6> 
         </div>
     </div>
    </div>
