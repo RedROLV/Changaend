@@ -26,6 +26,8 @@ class Dash extends Controller
     }
 
     
+
+    
     public function registerProduct($data) {
 
         $product = new Product();
