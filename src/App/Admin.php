@@ -20,4 +20,6 @@ class Admin extends Controller
     {
         echo "admin dash";
     }
+
+
 }

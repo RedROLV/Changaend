@@ -32,12 +32,18 @@ $router->post("/register", "Auth:register", "auth.register");
 $router->post("/forget", "Auth:forget", "auth.forget");
 $router->post("/reset", "Auth:reset", "auth.reset");
 
+
+/*
+*  USER INTERN AREA GET ROUTES
+*/
 $router->group('user');
 $router->get("/", "Dash:index", "dash.index");
 
 
+$router->post("/registerProduct", "Dash:registerProduct", "dash.registerProduct");
+$router->post("/deleteProduct", "Dash:deleteProduct", "dash.deleteProduct");
 /*
- * Adm
+ * ADMIN AREA GET ROUTES
  */
 
 $router->group('admin');
