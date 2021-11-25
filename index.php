@@ -54,13 +54,13 @@ $router->get("/", "Admin:index", "Admin.index");
  * FOR ERRORS
  */
 $router->group('ooops');
-$router->get("/{errcode}", "Web:error", "web.error");
+$router->get("/{error}", "Web:error", "web.error");
 
 // executins routes
 $router->dispatch();
 
 if ($router->error()){
-    $router->redirect("web.error", ["errcode" => $router->error()]);
+    $router->redirect("web.error", ["error" => $router->error()]);
 } 
 
 ob_end_flush();
