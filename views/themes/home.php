@@ -101,54 +101,36 @@
     <main>
       <section class="main_section">
 
-                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="<?=asset('img/conjunto1.png')?>" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="<?=asset('img/conjunto2.png')?>" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                    <img src="<?=asset('img/conjunto3.png')?>" class="d-block w-100" alt="...">
-                    </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
-            </div>
+        <h1>A melhor loja online do mercado!</h1>
+        <h3>Garanta já sua peça</h3>
+        <a href="<?=site().'/login'?>">
+            <button class="btn btn-danger font-weight-bold">VEJA MAIS!</button>
+        </a>
+               
       </section>  
-      <section id="products">
-            <div class="product">
-                <img src="<?=asset('img/vestido-floral.png')?>" width="250" class="product_image">
-                <p>Vestido cinza floral</p>
-                <p>preço: R$150,00</p>
-            </div>
-            <div class="product">
-                <img src="<?=asset('img/conjunto-floral.png')?>" width="250" class="product_image">
-                <p>conjunto floral</p>
-                <p>preço: R$120,00</p>
-            </div>
-            <div class="product">
-                <img src="<?=asset('img/calça-e-blusa-rosa.png')?>" width="250calça-e-blusa-rosa.png" class="product_image">
-                <p>Blusa rosa</p>
-                <p>preço: R$50,00</p>
-            </div>
-            <div class="product">
-                <img src="<?=asset('img/short-coral.png')?>" width="250" class="product_image">
-                <p>short coral</p>
-                <p>preço: R$50,00</p>
-            </div>
+      <section >
+            <a href="<?=site().'/login'?>" id="products">
+                <div class="product">
+                    <img src="<?=asset('img/vestido-floral.png')?>" width="250" class="product_image">
+                    <p>Vestido cinza floral</p>
+                    <p>preço: R$150,00</p>
+                </div>
+                <div class="product">
+                    <img src="<?=asset('img/conjunto-floral.png')?>" width="250" class="product_image">
+                    <p>conjunto floral</p>
+                    <p>preço: R$120,00</p>
+                </div>
+                <div class="product">
+                    <img src="<?=asset('img/calça-e-blusa-rosa.png')?>" width="250calça-e-blusa-rosa.png" class="product_image">
+                    <p>Blusa rosa</p>
+                    <p>preço: R$50,00</p>
+                </div>
+                <div class="product">
+                    <img src="<?=asset('img/short-coral.png')?>" width="250" class="product_image">
+                    <p>short coral</p>
+                    <p>preço: R$50,00</p>
+                </div>
+            </a>
       </section>
         <aside class="about">
             <h1>SOBRE NÓS</h1>

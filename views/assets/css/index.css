@@ -94,9 +94,11 @@
 
 .main_section {
     height: calc(100vh - 220px);
-    background-color: #d8d8d8e1;
+    background: linear-gradient(rgba(255,255,255, .5), rgba(255,255,255, .5)), url("../img/index_back.jpg") no-repeat left top;
+    background-size: cover;
+    background-position: center;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 0 5%;
@@ -182,6 +184,8 @@ footer {
 #products {
     display: flex;
     margin: 0 30px;
+    color: #000;
+    text-decoration: none;
 }
 
 .product {
