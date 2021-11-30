@@ -18,5 +18,15 @@ class Payment extends DataLayer
         parent::__construct("payment", [], 'id', false);
     }
 
+    public function getProduct()
+    {
+       return (new Product)->findById($this->id_product)->data();
+    }
+
+    public function getUser()
+    {
+        return (new User)->findById($this->id_user)->data();
+    }
+
 
 }
