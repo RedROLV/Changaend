@@ -41,6 +41,7 @@
                 <?php if ($_SESSION["tipo"] == 1) :?>
                 <li><a class='links' href="<?= site()."./admin/register" ?>">cadastrar produtos</a></li>
                 <?php endif;?>
+                <a href="<?= site() ?>">
                 <li><div class="btn-sm btn-danger">sair</div></li>
                 </a>
             </ul>
