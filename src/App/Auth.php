@@ -67,7 +67,7 @@ class Auth extends Controller {
                 $url = "admin.index";
                 break;
             case 2:
-                $url = "dash.index";
+                $url = "admin.index";
                 break;
             case 3:
                 $url = "dash.index";

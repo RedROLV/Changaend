@@ -18,7 +18,7 @@ class Admin extends Controller
 
     public function index()
     {
-        echo "admin dash";
+        echo $this->view->render("themes\dash_admin\admin");
     }
 
 

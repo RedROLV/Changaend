@@ -41,6 +41,9 @@ $router->get("/", "Dash:index", "dash.index");
 $router->get("/buy/{id}", "Dash:buy", "dash.buy");
 $router->post("/buy", "Dash:buying", "dash.buying");
 
+$router->group('admin');
+$router->get("/", "Admin:index", "admin.index");
+
 
 $router->post("/registerProduct", "Dash:registerProduct", "dash.registerProduct");
 $router->post("/deleteProduct", "Dash:deleteProduct", "dash.deleteProduct");
@@ -49,7 +52,7 @@ $router->post("/deleteProduct", "Dash:deleteProduct", "dash.deleteProduct");
  */
 
 $router->group('admin');
-$router->get("/", "Admin:index", "Admin.index");
+$router->get("/", "Admin:index", "admin.index");
 
 
 /*
