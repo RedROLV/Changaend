@@ -7,7 +7,7 @@ use Exception;
 /**
  * User
  */
-class Product extends DataLayer
+class Payment extends DataLayer
 {     
      /**
       * __construct
@@ -15,12 +15,7 @@ class Product extends DataLayer
       * @return void
       */
      function __construct() {
-        parent::__construct("products", [
-            "img",
-            'nome',
-            'descricao',
-            'preco'
-        ], 'id', false);
+        parent::__construct("payment", [], 'id', false);
     }
 
 

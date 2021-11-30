@@ -38,6 +38,8 @@ $router->post("/reset", "Auth:reset", "auth.reset");
 */
 $router->group('user');
 $router->get("/", "Dash:index", "dash.index");
+$router->get("/buy/{id}", "Dash:buy", "dash.buy");
+$router->post("/buy", "Dash:buying", "dash.buying");
 
 
 $router->post("/registerProduct", "Dash:registerProduct", "dash.registerProduct");

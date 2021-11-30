@@ -3,6 +3,7 @@
 namespace Source\App;
 use Source\Models\User;
 use CoffeeCode\Router\Router;
+use Source\Models\Payment;
 use Source\Models\Product;
 
 class Dash extends Controller
@@ -51,5 +52,31 @@ class Dash extends Controller
         if ($product) {
             echo "deletado com sucesso";
         }
+    }
+
+    public function buy($data)
+    {
+        $product = (new Product)->findById($data["id"]);
+
+        echo $this->view->render("themes\dash_user\buy", [
+            "product" => $product
+        ]);
+    }
+
+    public function buying($data)
+    {
+        $product = (new Payment);
+        $product->id_product = $data["product_id"];
+        $product->id_user = $data["user_id"];
+        $product->hash_buy = rand(82764382, 99823764);
+
+        if ($product->save()) {
+            echo "<script> alert('PARABENS COMPRA CONCLUIDA') </script>";
+            $this->router->redirect("dash.index");
+        }
+        
+
+        
+        
     }
 }

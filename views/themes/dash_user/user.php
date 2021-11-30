@@ -31,7 +31,9 @@
                <center><li class="nav_item" class="logo_container"><a href="./index.html"><img src="<?=asset('img/logo.png')?>" class="logo_nav"></a></li></center>
             </ul>
             <ul class="nav">
+                <a href="<?=$router->route("web.index")?>">
                 <li><div class="btn-sm btn-danger">sair</div></li>
+                </a>
             </ul>
         </nav>
     </header>
@@ -47,7 +49,7 @@
                             <p><?= $product->descricao ?></p>
                             <p>R$<?= $product->preco ?>,00</p>
                             <P>
-                                <a href="<?=site()."/buy/{$product->id}"?>">
+                                <a href="<?=site()."/user/buy/{$product->id}"?>">
                                     <button class="btn btn-success">comprar</button>
                                 </a>
                             </P>
