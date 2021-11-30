@@ -18,6 +18,7 @@
             flex-wrap: wrap;
         }
         .texts {
+            flex-wrap: wrap;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -25,6 +26,7 @@
 
         .teste {
             display: flex;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -36,6 +38,9 @@
             </ul>
             <ul class="nav">
                 <a href="<?=$router->route("web.index")?>">
+                <?php if ($_SESSION["tipo"] == 1) :?>
+                <li><a class='links' href="<?= site()."./admin/register" ?>">cadastrar produtos</a></li>
+                <?php endif;?>
                 <li><div class="btn-sm btn-danger">sair</div></li>
                 </a>
             </ul>
@@ -57,6 +62,11 @@
                                 <a href="<?=site()."/user/buy/{$product->id}"?>">
                                     <button class="btn btn-success">comprar</button>
                                 </a>
+                                <?php if ($_SESSION["tipo"] == 1) :?>
+                                    <a href="<?=site()."/admin/deleteProduct/{$product->id}"?>">
+                                        <button class="btn btn-danger">excluir</button>
+                                    </a>
+                                <?php endif;?>
                             </P>
                     </div>
                 </div>

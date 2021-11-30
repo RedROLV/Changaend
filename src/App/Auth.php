@@ -58,16 +58,16 @@ class Auth extends Controller {
 
 
         $_SESSION["user"] = $user->id_usuario; 
-
+        $_SESSION["tipo"] = $user->nivel; 
         $url = "";
 
 
         switch ($user->nivel) {
             case 1:
-                $url = "admin.index";
+                $url = "dash.index";
                 break;
             case 2:
-                $url = "admin.index";
+                $url = "dash.index";
                 break;
             case 3:
                 $url = "dash.index";

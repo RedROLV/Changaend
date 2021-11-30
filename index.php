@@ -46,7 +46,7 @@ $router->get("/", "Admin:index", "admin.index");
 $router->get("/register", "Admin:register", "admin.register");
 
 $router->post("/registerProduct", "Dash:registerProduct", "dash.registerProduct");
-$router->post("/deleteProduct", "Dash:deleteProduct", "dash.deleteProduct");
+$router->get("/deleteProduct/{id}", "Dash:deleteProduct", "dash.deleteProduct");
 /*
  * ADMIN AREA GET ROUTES
  */

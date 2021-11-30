@@ -42,6 +42,8 @@ class Dash extends Controller
         $product->descricao = $data["descricao"];
 
         $product->save();
+        echo "<script> alert('produto incluido') </script>";
+        $this->router->redirect("dash.index");
     }
 
     public function DeleteProduct($data)
@@ -50,6 +52,7 @@ class Dash extends Controller
 
         if ($product) {
             echo "deletado com sucesso";
+            $this->router->redirect("dash.index");
         }
     }
 
