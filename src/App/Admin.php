@@ -21,5 +21,10 @@ class Admin extends Controller
         echo $this->view->render("themes\dash_admin\admin");
     }
 
+    public function register()
+    {
+        echo $this->view->render("themes\dash_admin\\registerprod");
+    }
+
 
 }

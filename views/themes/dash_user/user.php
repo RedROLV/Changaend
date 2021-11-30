@@ -22,6 +22,10 @@
             flex-direction: column;
             justify-content: center;
         }
+
+        .teste {
+            display: flex;
+        }
     </style>
 </head>
 <body>
@@ -37,8 +41,9 @@
             </ul>
         </nav>
     </header>
-    <main class="container">
+    <main class="container ">
         <h1 class="h2 mt-3 mb-5">Lista de produtos</h1>
+        <div class="teste">
     <?php 
         if ($products): 
             foreach ($products as $product): ?>
@@ -61,6 +66,7 @@
     ?>
         <h2 class="text-center mt-3"> não há produtos cadastrados </h2>
     <?php endif; ?>
+    </div>
     </main>
 </body>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>

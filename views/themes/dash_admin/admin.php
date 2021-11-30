@@ -59,46 +59,6 @@
   cursor: pointer;
 }
 
-@media (min-width: 1366px) {
-  .wrapper {
-    display: flex;
-    align-items: flex-start;
-    justify-content: center;
-  }
-
-  .content {
-    flex-direction: inherit;
-    height: auto;
-    max-width: 1200px;
-    width: 100%;
-  }
-
-  .avatar-profile {
-    display: flex;
-    align-self: baseline;
-  }
-
-  .funcoes {
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    height: auto;
-    width: 700px;
-    margin: 0;
-    flex-wrap: wrap;
-  }
-
-  .links {
-    margin: 5px 20px;
-  }
-
-  .links:last-child {
-    margin: 5px 0px;
-  }
-  .links:first-child {
-    margin: 5px 0px;
-  }
-}
     </style>
 </head>
 <body>
@@ -106,7 +66,7 @@
         <div class='content'>
             <img class="avatar-profile" src="<?= asset('img/avatar-profile.png')?>" ></img>
             <div class="funcoes">
-                <a class='links' href="">cadastrar produtos</a>
+                <a class='links' href="<?= site()."./admin/register" ?>">cadastrar produtos</a>
             </div>
         </div>
     </div>

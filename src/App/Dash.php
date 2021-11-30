@@ -36,10 +36,9 @@ class Dash extends Controller
     public function registerProduct($data) {
 
         $product = new Product();
-        $product->imagem = $data["imagem"];
+        $product->img = $data["img"];
         $product->nome = $data["nome"];
         $product->preco = $data["preco"];
-        $product->qnt = $data["qnt"];
         $product->descricao = $data["descricao"];
 
         $product->save();
