@@ -13,7 +13,7 @@
         "coffeecode/router": "1.0.8",
         "coffeecode/datalayer": "1.1.8",
         "phpmailer/phpmailer": "6.1.4",
-        "league/plates": "V3.4.0",
+        "league/plates": "V4.0.0-alpha",
         "pagarme/pagarme-php": "v4.0.4"
     }
 }

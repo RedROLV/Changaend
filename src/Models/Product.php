@@ -15,12 +15,11 @@ class Product extends DataLayer
       * @return void
       */
      function __construct() {
-        parent::__construct("produtos", [
+        parent::__construct("products", [
             "imagem",
             'nome',
-            'preco',
-            'qnt',
-            'descricao'
+            'descricao',
+            'preco'
         ], 'id', false);
     }
 

@@ -22,7 +22,11 @@ class Dash extends Controller
 
     public function index()
     {
-        echo "user dash";
+
+        $products = (new Product())->find()->fetch(true);
+        echo $this->view->render("themes\dash_user\user", [
+            "products" => $products
+        ]);
     }
 
     

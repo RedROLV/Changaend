@@ -18,11 +18,8 @@ abstract class Controller {
 
     public function __construct($router) {
         $this->router = $router;
-        $this->view = new Engine(dirname(__FILE__ , 3) . "/views");
-
-
-
-        
+        $this->view = Engine::create(dirname(__FILE__ , 3) . "/views/", "php");
+        $this->view->addData(["router" => $this->router]);
     }
 
 
