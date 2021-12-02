@@ -128,6 +128,11 @@
 
 }
 
+.insta-icon {
+    display: flex;
+    width: 25px;
+}
+
 .about {
     margin-top: 30px;
     background-color: rgb(218, 97, 88);

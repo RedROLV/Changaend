@@ -137,13 +137,22 @@
             <div class="containers">
                 <div class="right">
                     <article>
-                        <h3></h3>
-                        <p style="margin-bottom: 40px;"> <br> enchendo linguica para ver como vai ficar</p>
+                        <h5 style="font-weight: 600;">Onde nos encontrar:</h5>
+                        <p style="margin-bottom: 20px;"> Nossa Loja Física está localizada em:<br> Rua Oswaldo Lussac, 305 - Taquara, Rio de Janeiro - RJ<br>CEP: 22770-640</p>
                     </article>
                     <article>
-                        <h3>O que fazemos?</h3>
-                        <p>Aqui ficara o que nos fazemos na empresa, ou o que nao fazemos</p>
+                        <h5 style="font-weight: 600;">O que fazemos?</h5>
+                        <p>Somos um Brechó, que possui uma loja física que também utiliza<br> de um portal online, para termos maior alcance.</p>
                     </article>
+                    <article>
+                        <h5 style="font-weight: 600;">Social:</h5>
+                        <p><p><a href="https://www.instagram.com/changeantb/" target="_blank">
+                               <img src="<?=asset('img/instagram.png')?>" class="insta-icon">
+                              </a>
+                           </p>
+                    </article>
+                    
+
                 </div>
             </div>
         </aside>
