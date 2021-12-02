@@ -78,6 +78,10 @@
                                 <p><p class="font-weight-bold">Nick:</p> <?= $payment[2]->usuario ?></p>
                                 <p><p class="font-weight-bold">Email:</p> <?= $payment[2]->email ?></p>
                                 <p><p class="font-weight-bold">Telefone:</p> <?= $payment[2]->telefone ?></p>
+                                <p><p class="font-weight-bold">Endereço:</p> <?= $payment[0]->logradouro ?></p>
+                                <p><p class="font-weight-bold">CEP:</p> <?= $payment[0]->cep ?></p>
+                                <p><p class="font-weight-bold">Complemento:</p> <?= $payment[0]->Complemento ?></p>
+                                <p><p class="font-weight-bold">UF:</p> <?= $payment[0]->uf ?></p>
                     </div>
                 </div>
             </div>

@@ -197,3 +197,8 @@ footer {
     flex-direction: column;
     align-items: center;
 }
+
+.product_image {
+    width: 80%;
+    height: 100%;
+}

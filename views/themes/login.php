@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,34 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tela de Login</title>
     <link rel="stylesheet" href="<?=asset("css/style.css")?>">
-    <link rel="stylesheet" href="<?=asset("css/login.css")?>">
+    <link rel="stylesheet" href="<?=asset("css/cadastro.css")?>">
 
 </head>
 
 <body> 
-   <div class="container">
-    <div class="card">
-      <h1 class="login_head">LOGAR-SE</h1>
+<div class="container" >
+    <div class="content">      
+      <div id="login">
+      <h1>Login</h1>
         <label class="position text">
 
         <Form action="<?=site().'/login'?>" method="POST">
 
-          <h3 class="text">USUÁRIO:</h3><p><input type="text" name="usuario" maxlength="16" required class="input" placeholder="Usuário" autocomplete="off"><br>
+         <class="text">Usuário:<p><input type="text" name="usuario" maxlength="16" required class="input" placeholder="Usuário" autocomplete="off"><br>
         </label>
-          <br>
+          
         <label class="position text">
-          <h3 class="text">SENHA:<p></h3><input type="password" name="senha"  minlength="6" maxlength="14" required class="input" placeholder="Senha" autocomplete="off">
-        </label>
-        <label class="position text">
-          <h6>ESQUECEU SUA SENHA?</h6>
-        </label>
-        <button type="submit" class="btn-submit"> Enviar </button>
+          <class="text">Senha:<p><input type="password" name="senha"  minlength="6" maxlength="14" required class="input" placeholder="Senha" autocomplete="off">
+        </label><p>
+        
+        <div>
+          <input class="btn-submit" type="submit" value="Entrar"/>
+        </div>
 
         </Form>
   
-        <div class="center">
-          <h6><b>NÃO TEM UMA CONTA?</b><a href="<?=site().'/cadastro'?>" class="text"> CADASTRE-SE</a></h6> 
-        </div>
+        <p class="link">
+            Ainda não tem conta?
+            <a href="<?=site().'/cadastro'?>"class="text"> Cadastre-se</a>
     </div>
    </div>
    

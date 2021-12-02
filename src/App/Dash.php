@@ -71,6 +71,11 @@ class Dash extends Controller
         $product->id_product = $data["product_id"];
         $product->id_user = $data["user_id"];
         $product->hash_buy = rand(82764382, 99823764);
+        $product->logradouro = $data["logradouro"];
+        $product->cep = $data["cep"];
+        $product->Complemento = $data["Complemento"];
+        $product->uf = $data["uf"];
+
 
         if ($product->save()) {
             echo "<script> alert('PARABENS COMPRA CONCLUIDA') </script>";

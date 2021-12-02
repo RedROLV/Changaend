@@ -112,22 +112,22 @@
             <a href="<?=site().'/login'?>" id="products">
                 <div class="product">
                     <img src="<?=asset('img/vestido-floral.png')?>" width="250" class="product_image">
-                    <p>Vestido cinza floral</p>
+                    <p>Vestido Cinza Floral</p>
                     <p>preço: R$150,00</p>
                 </div>
                 <div class="product">
                     <img src="<?=asset('img/conjunto-floral.png')?>" width="250" class="product_image">
-                    <p>conjunto floral</p>
+                    <p>Conjunto Floral</p>
                     <p>preço: R$120,00</p>
                 </div>
                 <div class="product">
                     <img src="<?=asset('img/calça-e-blusa-rosa.png')?>" width="250calça-e-blusa-rosa.png" class="product_image">
-                    <p>Blusa rosa</p>
+                    <p>Blusa Rosa</p>
                     <p>preço: R$50,00</p>
                 </div>
                 <div class="product">
                     <img src="<?=asset('img/short-coral.png')?>" width="250" class="product_image">
-                    <p>short coral</p>
+                    <p>Short Coral</p>
                     <p>preço: R$50,00</p>
                 </div>
             </a>
@@ -137,11 +137,11 @@
             <div class="containers">
                 <div class="right">
                     <article>
-                        <h3>Nosso Objetivo</h3>
-                        <p style="margin-bottom: 40px;">O nosso objetivo sera escrito e definido aqui eu estou <br> enchendo linguica para ver como vai ficar</p>
+                        <h3></h3>
+                        <p style="margin-bottom: 40px;"> <br> enchendo linguica para ver como vai ficar</p>
                     </article>
                     <article>
-                        <h3>O que fazemos ?</h3>
+                        <h3>O que fazemos?</h3>
                         <p>Aqui ficara o que nos fazemos na empresa, ou o que nao fazemos</p>
                     </article>
                 </div>

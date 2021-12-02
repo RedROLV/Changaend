@@ -49,7 +49,7 @@
 <body>
 <div class="border">
             <ul class="nav container">
-               <center><li class="nav_item" class="logo_container"><a href="<?= site()."/user" ?>"><img src="<?=asset('img/logo.png')?>" width="60" class="logo_nav mt-3 mb-3 ml-5"></a></li></center>
+               <li class="nav_item" class="logo_container"><img src="<?=asset('img/logo.png')?>" width="60" class="logo_nav mt-3 mb-3 ml-5"></li>
             </ul>
     </div>
     <div class="container mt-5 mb-5">
@@ -74,7 +74,7 @@
                             Cartão<input type="number" name="cartao" maxlength="18"> 
                             Titular<input type="text" name="titular" maxlength="18">
                             Codigo CVV<input type="text" name="cvv" maxlength="18">
-                            Validade<input type="text" name="val" maxlength="18">
+                            Validade<input type="month" name="val">
                             UF<input type="text" name="uf" maxlength="18">
                             Logradouro<input type="text" name="logradouro" maxlength="50">
                             CEP<input type="number" name="cep"  maxlength="8" required>

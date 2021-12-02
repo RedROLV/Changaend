@@ -4,7 +4,7 @@
         "name" => "Changend",
         "desc" => "Olx de Brecho online",
         "locale" => "pt_BR",
-        "base_url" => "http://localhost/Projects/Changaend"
+        "base_url" => "http://localhost/Changaend"
     ]);
 
     define("PAGARME_API_KEY", ""); // coloque sei token da api do pagar.me

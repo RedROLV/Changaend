@@ -6,53 +6,55 @@
     <title>Cadastre-se</title>
     <link rel="stylesheet" href="<?=asset("css/style.css")?>">
     <link rel="stylesheet" href="<?=asset("css/Cadastro.css")?>">
+ 
 </head>
 
 <body> 
+<div class="content"> 
    <div class="container">
-    <div class="card">
-      <h1>CADASTRE-SE</h1>
+    <div id="cadastro">
+      <h1>Cadastro</h1>
         <br>
 
       <form action="<?=site().'/register'?>" method="POST">
+    
 
         <div class="position text">
-          NOME COMPLETO:<p><input type="text" name="nome"  maxlength="50"><br>
+          Nome Completo:<p><input type="text" name="nome"  maxlength="50" required placeholder="Nome Sobrenome "/><p>
         </div>
 
         <div class="position text">
-          NOME DE USUÁRIO:<p><input type="text" name="usuario"  maxlength="12" required><br>
+          Nome de Usuário:<p><input type="text" name="usuario"  maxlength="12" required placeholder="Usuário"/><p>
         </div>
         
         <div class="position text">
-          E-MAIL:<p><input type="text" name="email"  maxlength="45" required><br>
+          E-mail:<p><input type="text" name="email"  maxlength="45" required placeholder="email@teste.com"/><p>
         </div>
 
         <div class="position text">
-          TELEFONE(OPCIONAL):<p><input type="number" name="telefone"  maxlength="14"><br>
+          Telefone(opicional):<p><input type="number" name="telefone"  maxlength="14" placeholder="(xx) xxxxx-xxxx"/><p>
         </div>
 
         <div class="position text">
-          SENHA:<p><input type="password" name="senha"  minlength="6" maxlength="16" required><br>
+          Senha:<p><input type="password" name="senha"  minlength="6" maxlength="16" required  placeholder="Senha"/><p>
         </div>
 
         <div class="position text">
-          REPITA A SENHA:<p></h4><input type="password" name="csenha"  minlength="6" maxlength="16" required><br>
+          Repita a Senha:<p></h4><input type="password" name="csenha"  minlength="6" maxlength="16" required placeholder="Repita a Senha"/><p>
         </div>
       
         <div>
-          <button class="btn-submit" type="submit">Cadastrar</button>
+          <input class="btn-submit" type="submit" value="cadastrar"/>
         </div>
-
-        </form>
-
+  
            <br>
-        <div class="center">
-          <h5>JÁ POSSUI UMA CONTA?<a href="<?=site().'/login'?>" class="text"> LOGIN</a></h5> 
-        </div>
+           <p class="link">  
+            Já tem conta?
+           <a href="<?=site().'/login'?>" class="text">Ir para login</a>
+     </form>
     </div>
    </div>
-   
+</div>
 </body>
 <script   src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script src='<?=asset('js/req.js')?>'>   </script>  
